@@ -1,0 +1,65 @@
+@charset "utf-8";
+/*
+   Sudoku Style Sheet
+   Author: Abraham Aguilar
+   Date: 11.20.17
+
+   Filename:         jpf_sudoku.css
+
+*/
+
+/* Table Styles */
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/*This makes the borders blend, gives it a max width of 90% of the section, and centers it horizontally.*/
+
+td {
+  border: 5px outset gray;
+  width: 33.33%;
+}
+
+/*This gives a gray outset border with a width of 1/3 of the table to the regular cells.*/
+
+th {
+  color: gray;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+/*This makes all bolded header cells be gray with 10px of space to the bottom and right.*/
+
+/* Inner Table Styles */
+
+table.subTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/*This makes the inner table have a collapsed border and gives it the entire width of the cell that it's in to work with.*/
+
+table.subTable td {
+  box-shadow: inset 0 0 15px;
+  border: 1px solid black;
+  color: blue;
+  height: 40px;
+  text-align: center;
+}
+
+/*This makes the regular cells inside the inner table have an inner shadow with a 1 pixel solid black border.  it also makes the inside blue colored with a height of 40px and centers the text.*/
+
+td.goldBox td {
+  background-color: rgb(228, 199, 42);
+}
+
+/*This makes all regular cells inside the container with a class of goldBox gold-colored.*/
+
+td.greenBox td {
+  background-color: rgb(203, 229, 130);
+}
+
+/*This makes all regular cells inside the container with a class of greenBox green.*/
